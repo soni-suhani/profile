@@ -1,327 +1,675 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suhani Soni - Resume</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #1e2761;
-            --primary-light: #f0f3ff;
-            --text-main: #1a1a1a;
-            --text-muted: #555555;
-            --bg-color: #f8fafc;
-            --card-bg: #ffffff;
-            --border-color: #e2e8f0;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suhani Soni — Mathematics &amp; Computer Science</title>
+  <meta name="description" content="Suhani Soni is a dual-degree Mathematics and Computer Science student at IIT Delhi, with software engineering experience at Google.">
+  <meta name="author" content="Suhani Soni">
+  <meta name="theme-color" content="#141c2b">
+  <meta property="og:title" content="Suhani Soni — Mathematics &amp; Computer Science">
+  <meta property="og:description" content="Dual-degree student at IIT Delhi. Software engineering experience at Google, and research in machine learning.">
+  <meta property="og:type" content="profile">
+  <meta property="og:profile:first_name" content="Suhani">
+  <meta property="og:profile:last_name" content="Soni">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23141c2b'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='Georgia' font-size='13' fill='%23f4efe6'%3ESS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Suhani Soni",
+    "email": "suhani05soni@gmail.com",
+    "telephone": "+91-7737499977",
+    "url": "https://www.linkedin.com/in/suhanisoni",
+    "sameAs": ["https://www.linkedin.com/in/suhanisoni"],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Indian Institute of Technology Delhi"
+    },
+    "description": "Dual-degree student in Mathematics and Computer Science at IIT Delhi."
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --navy: #141c2b;
+      --paper: #f3efe7;
+      --ink: #1c1915;
+      --muted: #5c564e;
+      --line: #ddd4c6;
+      --copper: #6e3828;
+      --header-text: #f6f1e8;
+      --header-muted: #d9cbb6;
+      --rule: #c99580;
+      --nav: rgba(243, 239, 231, 0.92);
+      --focus: #6e3828;
+    }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: dark;
+        --paper: #10141b;
+        --ink: #f0ebe3;
+        --muted: #b7afa4;
+        --line: #2a3140;
+        --copper: #e4b09c;
+        --nav: rgba(16, 20, 27, 0.92);
+        --focus: #e4b09c;
+      }
+    }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-            padding: 2rem 1rem;
-        }
+    * { box-sizing: border-box; }
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: var(--card-bg);
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            overflow: hidden;
-            border: 1px solid var(--border-color);
-        }
+    html { scroll-behavior: smooth; }
 
-        header {
-            background: var(--primary);
-            color: white;
-            padding: 3rem 2rem;
-            text-align: center;
-        }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Source Sans 3", "Segoe UI", sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.55;
+      text-rendering: optimizeLegibility;
+    }
 
-        header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            margin-bottom: 0.5rem;
-        }
+    ::selection {
+      background: #ead9cf;
+      color: #1c1915;
+    }
 
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            font-size: 0.95rem;
-            margin-top: 1rem;
-            opacity: 0.9;
-        }
+    .skip {
+      position: absolute;
+      left: 0.75rem;
+      top: -4rem;
+      z-index: 5;
+      background: #fff;
+      color: #141c2b;
+      padding: 0.45rem 0.75rem;
+      border-radius: 2px;
+    }
 
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            transition: opacity 0.2s;
-        }
+    .skip:focus { top: 0.75rem; }
 
-        .contact-info a:hover {
-            opacity: 0.7;
-            text-decoration: underline;
-        }
+    :focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 3px;
+    }
 
-        main {
-            padding: 2.5rem;
-        }
+    .wrap {
+      width: min(50rem, calc(100% - 2.25rem));
+      margin-inline: auto;
+    }
 
-        section {
-            margin-bottom: 2.5rem;
-        }
+    header {
+      background: var(--navy);
+      color: var(--header-text);
+      padding: 2.5rem 0 1.85rem;
+    }
 
-        section:last-child {
-            margin-bottom: 0;
-        }
+    .eyebrow {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--header-muted);
+    }
 
-        h2 {
-            font-size: 1.25rem;
-            color: var(--primary);
-            border-bottom: 2px solid var(--primary-light);
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
+    h1 {
+      margin: 0.4rem 0 0;
+      font-family: Fraunces, "Iowan Old Style", Palatino, Georgia, serif;
+      font-weight: 500;
+      font-optical-sizing: auto;
+      font-size: clamp(2.8rem, 8vw, 4.6rem);
+      line-height: 0.96;
+      letter-spacing: -0.035em;
+      text-wrap: balance;
+    }
 
-        .item {
-            margin-bottom: 1.75rem;
-        }
+    .lede {
+      margin: 0.85rem 0 0;
+      max-width: 38rem;
+      color: var(--header-muted);
+      font-size: 1.12rem;
+      line-height: 1.45;
+      text-wrap: pretty;
+    }
 
-        .item:last-child {
-            margin-bottom: 0;
-        }
+    .rule {
+      width: 2.6rem;
+      height: 2px;
+      margin: 1.15rem 0 0;
+      border: 0;
+      background: var(--rule);
+    }
 
-        .item-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-            margin-bottom: 0.25rem;
-        }
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.35rem 0;
+      margin: 1rem 0 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0.98rem;
+    }
 
-        .item-title {
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: var(--text-main);
-        }
+    .contact li:not(:last-child)::after {
+      content: "·";
+      margin: 0 0.7rem;
+      color: var(--rule);
+    }
 
-        .item-subtitle {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            font-style: italic;
-            margin-bottom: 0.5rem;
-        }
+    header a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
 
-        .date {
-            font-size: 0.875rem;
-            color: var(--text-muted);
-            font-weight: 500;
-        }
+    header a:hover { border-bottom-color: var(--rule); }
 
-        ul {
-            list-style-type: disc;
-            padding-left: 1.25rem;
-        }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      background: var(--nav);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
 
-        li {
-            margin-bottom: 0.5rem;
-            font-size: 0.95rem;
-            color: var(--text-muted);
-        }
+    nav .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
 
-        li strong {
-            color: var(--text-main);
-        }
+    nav ul {
+      display: flex;
+      flex: 1;
+      min-width: 0;
+      gap: 0.9rem;
+      margin: 0;
+      padding: 0.72rem 0;
+      list-style: none;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
 
-        @media (max-width: 768px) {
-            body {
-                padding: 0;
-            }
-            .container {
-                border-radius: 0;
-                border: none;
-            }
-            header {
-                padding: 2rem 1rem;
-            }
-            main {
-                padding: 1.5rem;
-            }
-            .item-header {
-                flex-direction: column;
-            }
-        }
-    </style>
+    nav ul::-webkit-scrollbar { display: none; }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.84rem;
+      letter-spacing: 0.02em;
+    }
+
+    nav a:hover,
+    nav a.active { color: var(--ink); }
+
+    nav a.active { box-shadow: inset 0 -1px 0 var(--copper); }
+
+    .print-btn {
+      flex: none;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.72rem 0 0.72rem 0.75rem;
+      cursor: pointer;
+    }
+
+    .print-btn:hover { color: var(--ink); }
+
+    main { padding: 0.4rem 0 4.5rem; }
+
+    section {
+      margin-top: 2.7rem;
+      scroll-margin-top: 3.4rem;
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      margin: 0 0 1.05rem;
+      font-family: "Source Sans 3", sans-serif;
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--copper);
+    }
+
+    h2::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--line);
+    }
+
+    .entry + .entry {
+      margin-top: 1.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .entry-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    h3 {
+      flex: 1;
+      min-width: 0;
+      margin: 0;
+      font-family: Fraunces, Palatino, Georgia, serif;
+      font-weight: 620;
+      font-size: 1.28rem;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      text-wrap: balance;
+    }
+
+    .when {
+      flex: none;
+      margin: 0.2rem 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .meta {
+      margin: 0.2rem 0 0.45rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .meta a {
+      color: inherit;
+      text-underline-offset: 0.15em;
+    }
+
+    ul.points {
+      margin: 0.35rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    ul.points li {
+      position: relative;
+      margin: 0.38rem 0;
+      padding-left: 1rem;
+      text-wrap: pretty;
+    }
+
+    ul.points li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.62em;
+      width: 0.32rem;
+      height: 1px;
+      background: var(--copper);
+    }
+
+    strong { font-weight: 600; }
+
+    .skill,
+    .course {
+      display: grid;
+      grid-template-columns: 7.6rem 1fr;
+      gap: 0.35rem 1rem;
+      margin: 0.45rem 0;
+    }
+
+    .skill dt,
+    .course dt {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .skill dd,
+    .course dd {
+      margin: 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 1.1rem 0 1.4rem;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 640px) {
+      .entry-top { flex-direction: column; gap: 0.1rem; }
+      .when { text-align: left; white-space: normal; margin-top: 0.15rem; }
+      .skill, .course { grid-template-columns: 1fr; gap: 0.05rem; }
+      .contact { flex-direction: column; align-items: flex-start; gap: 0.28rem; }
+      .contact li:not(:last-child)::after { content: none; }
+      header { padding: 2rem 0 1.5rem; }
+    }
+
+    @media (min-width: 800px) {
+      header { padding: 3.4rem 0 2.3rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      :root {
+        --paper: #fff;
+        --ink: #111;
+        --muted: #333;
+        --line: #ccc;
+        --copper: #111;
+      }
+
+      body { background: #fff; font-size: 10.5pt; line-height: 1.38; }
+      header { background: #fff; color: #111; padding: 0 0 8pt; }
+      .eyebrow, .lede, header a { color: #111; }
+      .rule { background: #111; }
+      nav, .skip, .print-btn { display: none !important; }
+      .wrap { width: 100%; }
+      a { color: inherit; text-decoration: none; }
+      h1 { font-size: 26pt; }
+      h3 { font-size: 13pt; }
+      section { margin-top: 14pt; scroll-margin-top: 0; }
+      .entry + .entry { margin-top: 8pt; padding-top: 8pt; }
+      h2, .entry-top, .meta { break-after: avoid; }
+      li { break-inside: avoid; }
+      footer { display: none; }
+      @page { margin: 1.3cm 1.4cm; }
+    }
+  </style>
 </head>
 <body>
+  <a class="skip" href="#content">Skip to content</a>
 
-    <div class="container">
-        <!-- Header & Contact -->
-        <header>
-            <h1>SUHANI SONI</h1>
-            <div class="contact-info">
-                <span><i class="fa-solid fa-envelope"></i> suhani05soni@gmail.com</span>
-                <span><i class="fa-solid fa-phone"></i> +91-7737499977</span>
-                <span><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/suhanisoni" target="_blank">linkedin.com/in/suhanisoni</a></span>
-            </div>
-        </header>
-
-        <main>
-            <!-- Education -->
-            <section>
-                <h2>Education</h2>
-                <div class="item">
-                    <div class="item-header">
-                        <span class="item-title">Indian Institute of Technology Delhi (IIT Delhi)</span>
-                        <span class="date">Sept 2022 – May 2027</span>
-                    </div>
-                    <div class="item-subtitle">B.Tech and M.Tech in Mathematics &amp; Computer Science (Dual Degree) | CGPA: 7.532 / 10</div>
-                </div>
-            </section>
-
-            <!-- Experience -->
-            <section>
-                <h2>Experience</h2>
-                
-                <div class="item">
-                    <div class="item-header">
-                        <span class="item-title">Google</span>
-                        <span class="date">May 2026 – Jul 2026</span>
-                    </div>
-                    <div class="item-subtitle">Software Engineering Intern — Machine Automation Team, Machine Health Org</div>
-                    <ul>
-                        <li>Designed and implemented <strong>real-time observability library</strong> for 20+ repair-automation states, distinguishing external-service waits from <strong>real failures</strong>; enabling on-call engineers to diagnose errors without manually parsing logs.</li>
-                        <li>Engineered <strong>in-memory deduplication layer</strong> to eliminate redundant <strong>RPC calls</strong>, reducing calls by <strong>~670,000+</strong> per hour.</li>
-                        <li>Built centralized error dashboard for <strong>Google's GPU-TPU repair-automation systems</strong>, accelerating error debugging and reducing mean-time-to-resolution.</li>
-                    </ul>
-                </div>
-
-                <div class="item" style="margin-top: 1.5rem;">
-                    <div class="item-header">
-                        <span class="item-title">Google</span>
-                        <span class="date">May 2025 – Jul 2025</span>
-                    </div>
-                    <div class="item-subtitle">Software Engineering Intern — Payments Platform</div>
-                    <ul>
-                        <li>Developed <strong>Autonomous AI agents</strong> for Vendor Gateway (VGW) code generation, saving up to <strong>280 developer-days</strong> per year across <strong>68,000+ lines of code</strong> - with zero-touch, multi-step generation workflows and automated error recovery.</li>
-                        <li>Employed Google-internal semantic code embedding models to conduct rigorous, iterative testing of generated code.</li>
-                        <li>Integrated new vendors using AI agents, saving <strong>15+ days/vendor</strong>, accelerating onboarding of vendor integrations across the Payments Platform.</li>
-                    </ul>
-                </div>
-
-                <div class="item" style="margin-top: 1.5rem;">
-                    <div class="item-header">
-                        <span class="item-title">D.E. Shaw - DESIS Ascend Educare Program</span>
-                        <span class="date">Oct 2024 – Apr 2025</span>
-                    </div>
-                    <div class="item-subtitle">Program Fellow — selected as one of 40 girl students in India</div>
-                    <ul>
-                        <li>Designed a <strong>full-stack mutual fund recommendation</strong> application using React, Flask, and PostgreSQL, to assess user profiles and goals, suggesting optimal funds through a <strong>suitability-scoring model</strong>.</li>
-                        <li>Developed interactive analytics tooling for historical NAV trends, risk metrics, and asset allocation, to enable deeper portfolio-level insights.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Research Experience -->
-            <section>
-                <h2>Research Experience</h2>
-                <div class="item">
-                    <div class="item-header">
-                        <span class="item-title">Time Series Generation under Dynamic Treatment Policies and Hidden Confounding</span>
-                        <span class="date">July 2026 – Ongoing</span>
-                    </div>
-                    <div class="item-subtitle">M.Tech Thesis, Prof. Sandeep Kumar | Causal Inference, Diffusion/Flow Models, PyTorch</div>
-                    <ul>
-                        <li>Working on a novel causal time series generation problem: simulating whole future trajectories under adaptive, time-varying treatment policies when an unrecorded confounder also changes over time.</li>
-                        <li>Extending G-Net/G-Transformer-style g-computation with latent-confounder modelling and diffusion/flow generators.</li>
-                    </ul>
-                </div>
-
-                <div class="item" style="margin-top: 1.5rem;">
-                    <div class="item-header">
-                        <span class="item-title">Deep Learning Framework for Antimicrobial Peptide Therapeutic Prediction</span>
-                        <span class="date">Feb 2026 – Sept 2026</span>
-                    </div>
-                    <div class="item-subtitle">Prof. Garima, Dept. of Biochemical Engineering &amp; Biotechnology, IIT Delhi | PyTorch, ESM-2, ProtBERT</div>
-                    <ul>
-                        <li>Designed <strong>multi-task deep learning pipeline</strong> predicting antimicrobial activity (pMIC), hemolytic toxicity (pHC50) from peptide sequences, using pretrained <strong>protein language models</strong> (<strong>ESM-2, ProtBERT</strong>) with <strong>BiGRU</strong> based <strong>encoders</strong>.</li>
-                        <li>Ran ablation studies across loss formulations (MSE, log-cosh, uncertainty-weighted multi-task loss) and architectures (mean-pooled, gated per-task attention), achieving final <strong>Pearson R of 0.66</strong> (pMIC) and <strong>0.78</strong> (pHC50).</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Projects -->
-            <section>
-                <h2>Projects</h2>
-                
-                <div class="item">
-                    <div class="item-header">
-                        <span class="item-title">N-Gram Language Model and Misspelling Correction</span>
-                        <span class="date">Feb 2026</span>
-                    </div>
-                    <div class="item-subtitle">Prof. Tanmoy | Python, NLP</div>
-                    <ul>
-                        <li>Built <strong>N-gram language models</strong> for context-aware <strong>probability estimation</strong>, evaluated using the <strong>perplexity</strong> metric.</li>
-                        <li>Implemented <strong>smoothing techniques from scratch</strong> — Kneser-Ney, Interpolation, Add-k, Good-Turing, Stupid Backoff.</li>
-                        <li>Developed <strong>misspelling-correction system</strong> using <strong>noisy-channel</strong> model with <strong>edit-distance</strong>-based error modeling, achieving accuracy of <strong>83%</strong>.</li>
-                    </ul>
-                </div>
-
-                <div class="item" style="margin-top: 1.5rem;">
-                    <div class="item-header">
-                        <span class="item-title">Named Entity Recognition using Conditional Random Fields</span>
-                        <span class="date">Feb 2026</span>
-                    </div>
-                    <div class="item-subtitle">Prof. Tanmoy | PyTorch, LSTM</div>
-                    <ul>
-                        <li>Built bi-directional <strong>LSTM-CRF model</strong>, trained using negative <strong>log-likelihood</strong> loss &amp; <strong>Adam optimizer</strong> with <strong>96% accuracy</strong>.</li>
-                        <li>Implemented <strong>CRF</strong> from scratch using <strong>Forward-Backward algorithm</strong> for the partition function and <strong>Viterbi decoding</strong>.</li>
-                        <li>Engineered <strong>emission</strong> and <strong>transition potentials</strong> using learned embeddings and manual one-hot POS/word features.</li>
-                    </ul>
-                </div>
-
-                <div class="item" style="margin-top: 1.5rem;">
-                    <div class="item-header">
-                        <span class="item-title">Custom Unix Shell, CPU Schedulers &amp; Memory Allocator</span>
-                        <span class="date">Nov 2025</span>
-                    </div>
-                    <div class="item-subtitle">Prof. Dalu Jacob | C</div>
-                    <ul>
-                        <li>Developed <strong>a Unix-like shell</strong> using raw exec system calls (no readline) supporting piping, I/O redirection, wildcard expansion, command chaining, and <strong>filename tab-completion</strong>.</li>
-                        <li>Built <strong>5 CPU scheduling policies</strong> (FCFS, Round Robin, SJF with history-weighting, and offline + adaptive real-time <strong>MLFQ</strong>) with real-time process arrival handling; logged turnaround, waiting, and response-time metrics to CSV.</li>
-                        <li>Designed a <strong>custom malloc/free library</strong> using mmap, brk, and sbrk directly, implementing <strong>5 allocation strategies</strong>: Best Fit, Worst Fit, Buddy Allocation, and First/Next Fit with <strong>O(log n)</strong> free-list search.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Leadership -->
-            <section>
-                <h2>Leadership</h2>
-                <div class="item">
-                    <div class="item-header">
-                        <span class="item-title">President, IIT Tech Ambit</span>
-                        <span class="date">Pan-IIT Tech &amp; Research Magazine</span>
-                    </div>
-                    <div class="item-subtitle">Spread over 23 IITs</div>
-                </div>
-            </section>
-        </main>
+  <header>
+    <div class="wrap">
+      <p class="eyebrow">IIT Delhi · Dual Degree</p>
+      <h1>Suhani Soni</h1>
+      <p class="lede">B.Tech and M.Tech in Mathematics and Computer Science · CGPA 7.532 / 10</p>
+      <hr class="rule">
+      <ul class="contact">
+        <li><a href="mailto:suhani05soni@gmail.com">suhani05soni@gmail.com</a></li>
+        <li><a href="tel:+917737499977">+91 77374 99977</a></li>
+        <li><a rel="me noopener" target="_blank" href="https://www.linkedin.com/in/suhanisoni">linkedin.com/in/suhanisoni</a></li>
+      </ul>
     </div>
+  </header>
 
+  <nav aria-label="Resume sections">
+    <div class="wrap">
+      <ul>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#coursework">Coursework</a></li>
+      </ul>
+      <button class="print-btn" type="button">Print</button>
+    </div>
+  </nav>
+
+  <main id="content">
+    <div class="wrap">
+      <section id="education" aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <article class="entry">
+          <div class="entry-top">
+            <h3>Indian Institute of Technology Delhi</h3>
+            <p class="when"><time datetime="2022-09">Sep 2022</time> – <time datetime="2027-05">May 2027</time></p>
+          </div>
+          <p class="meta">B.Tech and M.Tech in Mathematics and Computer Science · Dual Degree · CGPA 7.532 / 10</p>
+        </article>
+      </section>
+
+      <section id="experience" aria-labelledby="experience-title">
+        <h2 id="experience-title">Experience</h2>
+
+        <article class="entry">
+          <div class="entry-top">
+            <h3>Google</h3>
+            <p class="when"><time datetime="2026-05">May 2026</time> – <time datetime="2026-07">Jul 2026</time></p>
+          </div>
+          <p class="meta">Software Engineering Intern — Machine Automation Team, Machine Health Org</p>
+          <ul class="points">
+            <li>Designed and implemented a <strong>real-time observability library</strong> for <strong>20+</strong> repair-automation states, distinguishing external-service waits from real failures so on-call engineers can diagnose errors without manually parsing logs.</li>
+            <li>Engineered an <strong>in-memory deduplication layer</strong> to eliminate redundant <strong>RPC calls</strong>, reducing calls by <strong>~670,000+</strong> per hour.</li>
+            <li>Built a centralized error dashboard for <strong>Google’s GPU-TPU repair-automation systems</strong>, accelerating error debugging and reducing mean time to resolution.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-top">
+            <h3>Google</h3>
+            <p class="when"><time datetime="2025-05">May 2025</time> – <time datetime="2025-07">Jul 2025</time></p>
+          </div>
+          <p class="meta">Software Engineering Intern — Payments Platform</p>
+          <ul class="points">
+            <li>Developed <strong>autonomous AI agents</strong> for Vendor Gateway (VGW) code generation, saving up to <strong>280 developer-days</strong> per year across <strong>68,000+</strong> lines of code, with zero-touch, multi-step generation workflows and automated error recovery.</li>
+            <li>Employed <strong>Google-internal semantic code embedding models</strong> to conduct rigorous, iterative testing of generated code.</li>
+            <li>Integrated new vendors using AI agents, saving <strong>15+ days per vendor</strong> and accelerating onboarding across the Payments Platform.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-top">
+            <h3>D.E. Shaw — DESIS Ascend Educare Program</h3>
+            <p class="when"><time datetime="2024-10">Oct 2024</time> – <time datetime="2025-04">Apr 2025</time></p>
+          </div>
+          <p class="meta">Program Fellow — selected as one of 40 women students in India</p>
+          <ul class="points">
+            <li>Designed a <strong>full-stack mutual fund recommendation</strong> application using React, Flask, and PostgreSQL to assess user profiles and goals, suggesting optimal funds through a <strong>suitability-scoring model</strong>.</li>
+            <li>Developed interactive analytics for historical NAV trends, risk metrics, and asset allocation, to enable deeper portfolio-level insights.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="research" aria-labelledby="research-title">
+        <h2 id="research-title">Research</h2>
+
+        <article class="entry">
+          <div class="entry-top">
+            <h3>Time Series Generation under Dynamic Treatment Policies and Hidden Confounding</h3>
+            <p class="when"><time datetime="2026-07">Jul 2026</time> – Present</p>
+          </div>
+          <p class="meta">M.Tech thesis · Prof. Sandeep Kumar · Causal inference, diffusion/flow models, PyTorch</p>
+          <ul class="points">
+            <li>Working on causal time-series generation: simulating future trajectories under adaptive, time-varying treatment policies when an unrecorded confounder also changes over time.</li>
+            <li>Extending G-Net and G-Transformer-style g-computation with latent-confounder modelling and diffusion/flow generators.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-top">
+            <h3>Deep Learning Framework for Antimicrobial Peptide Therapeutic Prediction</h3>
+            <p class="when"><time datetime="2026-02">Feb 2026</time> – <time datetime="2026-09">Sep 2026</time></p>
+          </div>
+          <p class="meta">Prof. Garima, Department of Biochemical Engineering and Biotechnology, IIT Delhi · PyTorch, ESM-2, ProtBERT</p>
+          <ul class="points">
+            <li>Designed a <strong>multi-task deep learning pipeline</strong> predicting antimicrobial activity (pMIC) and hemolytic toxicity (pHC50) from peptide sequences, using pretrained <strong>protein language models</strong> (<strong>ESM-2, ProtBERT</strong>) with <strong>BiGRU</strong>-based encoders.</li>
+            <li>Ran ablation studies across loss formulations (<strong>MSE, log-cosh, uncertainty-weighted multi-task loss</strong>) and architectures (<strong>mean-pooled</strong> and <strong>gated per-task attention</strong>), achieving a final <strong>Pearson R of 0.66</strong> (pMIC) and <strong>0.78</strong> (pHC50).</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+
+        <article class="entry">
+          <div class="entry-top">
+            <h3>N-Gram Language Model and Misspelling Correction</h3>
+            <p class="when"><time datetime="2026-02">Feb 2026</time></p>
+          </div>
+          <p class="meta">Prof. Tanmoy · Python, NLP</p>
+          <ul class="points">
+            <li>Built <strong>n-gram language models</strong> for context-aware probability estimation, evaluated with <strong>perplexity</strong>.</li>
+            <li>Implemented <strong>smoothing techniques from scratch</strong>: Kneser-Ney, interpolation, add-k, Good-Turing, and Stupid Backoff.</li>
+            <li>Developed a <strong>misspelling-correction system</strong> using a <strong>noisy-channel</strong> model with <strong>edit-distance</strong> error modeling, achieving <strong>83% accuracy</strong>.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-top">
+            <h3>Named Entity Recognition with Conditional Random Fields</h3>
+            <p class="when"><time datetime="2026-02">Feb 2026</time></p>
+          </div>
+          <p class="meta">Prof. Tanmoy · PyTorch, LSTM</p>
+          <ul class="points">
+            <li>Built a bidirectional <strong>LSTM-CRF</strong> model, trained with negative <strong>log-likelihood</strong> and the <strong>Adam</strong> optimizer, at <strong>96% accuracy</strong>.</li>
+            <li>Implemented the <strong>CRF</strong> from scratch, using the <strong>forward-backward algorithm</strong> for the partition function and <strong>Viterbi decoding</strong>.</li>
+            <li>Engineered <strong>emission and transition potentials</strong> from learned embeddings and one-hot POS and word features.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-top">
+            <h3>Unix Shell, CPU Schedulers, and Memory Allocator</h3>
+            <p class="when"><time datetime="2025-11">Nov 2025</time></p>
+          </div>
+          <p class="meta">Prof. Dalu Jacob · C</p>
+          <ul class="points">
+            <li>Developed a <strong>Unix-like shell</strong> with raw <strong>exec</strong> system calls (no readline), supporting pipes, I/O redirection, wildcard expansion, command chaining, and <strong>filename tab-completion</strong>.</li>
+            <li>Built <strong>five CPU scheduling policies</strong> — FCFS, round robin, SJF with history weighting, and offline plus adaptive real-time <strong>MLFQ</strong> — with <strong>real-time process arrival</strong>, logging turnaround, waiting, and response time to CSV.</li>
+            <li>Designed a <strong>custom malloc/free</strong> library on mmap, brk, and sbrk, with five strategies: best fit, worst fit, buddy allocation, and first/next fit with <strong>O(log n)</strong> free-list search.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-top">
+            <h3>Audio Clustering and Classification</h3>
+            <p class="when"><time datetime="2025-04">Apr 2025</time></p>
+          </div>
+          <p class="meta">Prof. Niladri · Python, Librosa, scikit-learn</p>
+          <ul class="points">
+            <li>Extracted audio features (MFCCs, spectral, rhythmic, texture) from raw waveforms with <strong>Librosa</strong> and <strong>PyWavelets</strong>.</li>
+            <li>Handled severe class imbalance in <strong>Random Forest, XGBoost, and SVM</strong> classifiers built on those features.</li>
+            <li>Applied <strong>PCA</strong> for dimensionality reduction and implemented <strong>K-means from scratch</strong>, benchmarked against <strong>DBSCAN</strong>.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-top">
+            <h3>Large-Context LLM Q&amp;A and Search Engine</h3>
+            <p class="when"><time datetime="2024-11">Nov 2024</time></p>
+          </div>
+          <p class="meta">Prof. Rahul Garg · C++, data structures</p>
+          <ul class="points">
+            <li>Implemented a search engine based on <strong>real-time optimized Knuth-Morris-Pratt (KMP)</strong> matching, in <strong>O(n + m)</strong> time.</li>
+            <li>Processed <strong>100+</strong> books to retrieve <strong>top-k paragraphs</strong> with <strong>TF-IDF</strong> and <strong>BM25</strong>.</li>
+            <li>Indexed <strong>10M+ words</strong> in a <strong>custom trie</strong>, checking memory with <strong>Valgrind</strong> and <strong>GDB</strong>.</li>
+            <li>Used prompt engineering to pull context-grounded answers from ChatGPT and models on Hugging Face.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-top">
+            <h3>Compiler and Expression Evaluator</h3>
+            <p class="when"><time datetime="2024-10">Oct 2024</time></p>
+          </div>
+          <p class="meta">Prof. Subodh Sharma · C++, data structures</p>
+          <ul class="points">
+            <li>Designed a compiler for a custom arithmetic language, parsing tokenized expressions into an <strong>abstract syntax tree</strong> with assignment, deletion, and return.</li>
+            <li>Implemented an <strong>AVL-tree symbol table</strong> for <strong>O(log n)</strong> lookup and a <strong>min-heap</strong> for address allocation during compilation.</li>
+            <li>Built <strong>arbitrary-precision integer arithmetic from scratch</strong> on digit arrays, with add, subtract, multiply, divide, and mod, extended to rationals with <strong>GCD reduction</strong>.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="leadership" aria-labelledby="leadership-title">
+        <h2 id="leadership-title">Leadership</h2>
+        <article class="entry">
+          <div class="entry-top">
+            <h3>President, IIT Tech Ambit</h3>
+          </div>
+          <p class="meta">Pan-IIT tech and research magazine across 23 IITs — <a href="https://iit-techambit.in">iit-techambit.in</a></p>
+          <ul class="points">
+            <li><strong>Scaled</strong> the editorial and design team from <strong>15 to 50+</strong> members and increased publication cadence <strong>6×</strong>, from quarterly to twice-monthly issues.</li>
+            <li>Single-handedly manages <strong>50 students</strong> across <strong>IIT Bombay, IIT Kharagpur, and IIT Delhi</strong>.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="achievements" aria-labelledby="achievements-title">
+        <h2 id="achievements-title">Achievements</h2>
+        <ul class="points">
+          <li><strong>JEE Advanced 2022.</strong> All India Rank <strong>965</strong> (OB) among 150,000+ candidates.</li>
+          <li><strong>JEE Main 2022.</strong> <strong>98.66</strong> percentile, All India Rank <strong>2705</strong> (OB) among 850,000+ candidates.</li>
+          <li><strong>NTSE 2020.</strong> Cleared Stage-1 (state) and Stage-2 (national); selected in the top 2,000 nationally; received a <strong>merit scholarship</strong> from the Government of India.</li>
+          <li><strong>District topper,</strong> CBSE Class 10, at 98.6%. Received a CBSE <strong>Certificate of Merit</strong> for ranking in the top <strong>0.1%</strong> of Mathematics scorers nationally.</li>
+        </ul>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">Technical skills</h2>
+        <dl class="skill">
+          <dt>Languages</dt>
+          <dd>C++, Python, Java, JavaScript</dd>
+          <dt>AI / ML</dt>
+          <dd>LLM applications, prompt engineering, LangChain, AI agents, PyTorch, scikit-learn, NumPy, Pandas, Matplotlib</dd>
+          <dt>Tools</dt>
+          <dd>Docker, Git, GitHub, VS Code, Cursor, GDB, Valgrind</dd>
+        </dl>
+
+      </section>
+
+      <section id="coursework" aria-labelledby="coursework-title">
+        <h2 id="coursework-title">Coursework</h2>
+        <dl class="course">
+          <dt>Computer science</dt>
+          <dd>Data Structures and Algorithms, Design and Analysis of Algorithms, Operating Systems, Theory of Computation, Computer Architecture</dd>
+          <dt>Mathematics</dt>
+          <dd>Discrete Mathematical Structures, Graph Theory, Combinatorics, Probability and Stochastic Processes, Numerical Optimization, Computational Methods for Differential Equations, Multivariate Statistical Methods, Functional Analysis, Financial Mathematics</dd>
+        </dl>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">Suhani Soni · Mathematics and Computer Science · IIT Delhi</div>
+  </footer>
+
+  <script>
+    document.querySelector(".print-btn").addEventListener("click", function () {
+      window.print();
+    });
+
+    var links = Array.prototype.slice.call(document.querySelectorAll("nav a"));
+    var sections = links.map(function (link) {
+      return document.querySelector(link.getAttribute("href"));
+    }).filter(Boolean);
+
+    if ("IntersectionObserver" in window) {
+      var active = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          links.forEach(function (link) {
+            link.classList.toggle("active", link.getAttribute("href") === "#" + entry.target.id);
+          });
+        });
+      }, { rootMargin: "-20% 0px -65% 0px", threshold: 0 });
+      sections.forEach(function (section) { active.observe(section); });
+    }
+  </script>
 </body>
 </html>
